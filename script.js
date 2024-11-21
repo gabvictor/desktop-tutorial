@@ -2,9 +2,9 @@ const form = document.getElementById('dataForm');
 const statusMessage = document.getElementById('statusMessage');
 
 // Configurações do repositório GitHub
-const GITHUB_TOKEN = "SEU_TOKEN_AQUI"; // Substitua pelo seu token pessoal
-const GITHUB_OWNER = "SEU_USUARIO";   // Substitua pelo seu nome de usuário ou organização
-const GITHUB_REPO = "SEU_REPOSITORIO"; // Substitua pelo nome do repositório
+const GITHUB_TOKEN = "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"; // Substitua pelo seu token pessoal
+const GITHUB_OWNER = "gabvictor";   // Substitua pelo seu nome de usuário ou organização
+const GITHUB_REPO = "https://github.com/gabvictor/desktop-tutorial/edit/main/script.js"; // Substitua pelo nome do repositório
 const GITHUB_FILE_PATH = "dados/formulario.json"; // Caminho do arquivo onde os dados serão armazenados
 
 form.addEventListener('submit', async (event) => {
