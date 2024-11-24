@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coleta de Dados</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vídeo com Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+        }
+        video {
+            margin-top: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        a {
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formulário de Coleta de Dados</h1>
-    <form id="dataForm">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="phone">Telefone:</label>
-        <input type="tel" id="phone" name="phone" required><br><br>
-
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea><br><br>
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <p id="statusMessage"></p>
-    <script src="script.js"></script>
-    
+    <h1>Assista o Vídeo Completo</h1>
+    <!-- Insira o vídeo -->
+    <video controls>
+        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        Seu navegador não suporta o player de vídeo.
+    </video>
+    <!-- Link abaixo -->
+    <a href="https://seusite.com" target="_blank">Clique para assistir ao vídeo completo</a>
 </body>
 </html>
