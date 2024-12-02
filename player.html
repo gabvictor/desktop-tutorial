@@ -73,6 +73,15 @@
   <div id="container-e53ab496e7fefcca0daad38a8c08ccd1-3"></div> <!-- Tentar modificar o ID localmente -->
 </div>
 
+    <script>
+  window.addEventListener('load', function() {
+    var adContainers = document.querySelectorAll('[id^="container-e53ab496e7fefcca0daad38a8c08ccd1"]');
+    adContainers.forEach(function(container, index) {
+      container.id = container.id + '-' + (index + 1); // Adiciona um número único para cada contêiner
+    });
+  });
+</script>
+
 
   <footer>
     <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
